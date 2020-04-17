@@ -1,8 +1,8 @@
-package com.Array;
+package com.Array.ArrayRotation;
 
 public class ArrayRotation {
     /*Function to left rotate arr[] of size n by d*/
-    void leftRotate(int arr[], int d)
+    public void leftRotate(int arr[], int d)
     {
         int n = arr.length;
         for (int i = 0; i < d; i++){
@@ -19,7 +19,7 @@ public class ArrayRotation {
         }
         arr[i] = temp;
     }
-    void rightRotate(int arr[], int d){
+    public void rightRotate(int arr[], int d){
         int n = arr.length;
         for(int i=0; i<d; i++){
             rightRotateOne(arr, n);
@@ -34,7 +34,7 @@ public class ArrayRotation {
      arr[i]=temp;
     }
 
-    void printArray(int arr[]){
+    public void printArray(int arr[]){
         int n = arr.length;
         for(int i=0; i<n; i++){
             System.out.print(arr[i]+" ");
