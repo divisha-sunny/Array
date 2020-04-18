@@ -1,13 +1,13 @@
 package com.Array.ArrayFormation;
 
 public class DeleteElement {
-    public int deleteElement(int arr[],int key){
+    public int deleteElement(int arr[],int n,int key){
         int pos = findElement(arr, key);
         if(pos == -1){
             System.out.println("Element not found");
+            return n;
         }
-        int n = arr.length;
-        for(int i=pos; i<n; i++){
+        for(int i=pos; i<n-1; i++){
             arr[i]=arr[i+1];
         }
         return n-1;
