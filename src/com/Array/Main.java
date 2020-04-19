@@ -1,5 +1,6 @@
 package com.Array;
 
+import Strings.areTwoStringsUnique;
 import com.Array.ArrayFormation.DeleteElement;
 import com.Array.ArrayFormation.InsertElement;
 import com.Array.ArrayFormation.Search;
@@ -60,20 +61,28 @@ public class Main {
         for (int i=0; i<n; i++) {
             System.out.print(arr[i] + " ");
         }*/
-        MergeTwoArrays merge = new MergeTwoArrays();
+        /*MergeTwoArrays merge = new MergeTwoArrays();
         int mPlusN[] = {2, 8, -1, -1, -1, 13, -1, 15, 20};
         int N[] = {5, 7, 9, 25};
         int n = N.length;
         int m = mPlusN.length - n;
 
-        /*Move the m elements at the end of mPlusN*/
+        *//*Move the m elements at the end of mPlusN*//*
         merge.moveToEnd(mPlusN, m + n);
 
-        /*Merge N[] into mPlusN[] */
+        *//*Merge N[] into mPlusN[] *//*
         merge.merge(mPlusN, N, m, n);
 
-        /* Print the resultant mPlusN */
-        rotate.printArray(mPlusN);
+        *//* Print the resultant mPlusN *//*
+        rotate.printArray(mPlusN);*/
+        areTwoStringsUnique unique = new areTwoStringsUnique();
+        String input = "Divya";
+        if(unique.isUniqueString(input)){
+            System.out.println("Has Unique characters");
+        }
+        else {
+            System.out.println("Has duplicate characters");
+        }
     }
 }
 
