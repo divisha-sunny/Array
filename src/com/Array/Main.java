@@ -1,5 +1,6 @@
 package com.Array;
 
+import Strings.areTwoStringsPermutationsToEachOther;
 import Strings.areTwoStringsUnique;
 import com.Array.ArrayFormation.DeleteElement;
 import com.Array.ArrayFormation.InsertElement;
@@ -75,13 +76,24 @@ public class Main {
 
         *//* Print the resultant mPlusN *//*
         rotate.printArray(mPlusN);*/
-        areTwoStringsUnique unique = new areTwoStringsUnique();
-        String input = "Divya";
+
+       /* areTwoStringsUnique unique = new areTwoStringsUnique();
+        String input = "Divisha";
         if(unique.isUniqueString(input)){
             System.out.println("Has Unique characters");
         }
         else {
             System.out.println("Has duplicate characters");
+        }*/
+
+        areTwoStringsPermutationsToEachOther permutation = new areTwoStringsPermutationsToEachOther();
+        String str1 = "dog";
+        String str2 = "dog";
+        if(permutation.charCount(str1, str2)){
+            System.out.println("Yes");
+        }
+        else{
+            System.out.println("No");
         }
     }
 }
