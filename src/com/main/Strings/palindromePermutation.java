@@ -1,6 +1,8 @@
 package com.main.Strings;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.List;
 
 import static com.main.Main.NO_OF_CHARACTERS;
 
@@ -26,5 +28,24 @@ public class palindromePermutation {
 
         }
         return true;
+    }
+
+    public boolean palindromePermutawithList(String str){
+
+        // Traverse the string and remove the character if already contains else add to the list.
+        // If string length is even expected to be empty else size is expected to be 1
+        List<Character> list = new ArrayList<Character>();
+        for(int i=0; i<str.length(); i++){
+            if(list.contains(str.charAt(i))){
+                list.remove((Character)str.charAt(i));
+            }
+            else{
+                list.add(str.charAt(i));
+            }
+        }
+        if(((str.length() % 2) == 0 && list.isEmpty()) || ((str.length() % 2) != 0 && (list.size() == 1))){
+            return true;
+        }
+        return false;
     }
 }

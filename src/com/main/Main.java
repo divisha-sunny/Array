@@ -102,7 +102,7 @@ public class Main {
         System.out.println(replace.replaceSpaces(str,13));*/
 
         palindromePermutation palindrome = new palindromePermutation();
-        if(palindrome.canFormPalindrome("RaRa")){
+        if(palindrome.palindromePermutawithList("Vasamma")){
             System.out.println("Yes");
         }
         else {
