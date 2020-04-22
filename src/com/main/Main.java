@@ -1,14 +1,14 @@
-package com.Array;
+package com.main;
 
-import Strings.areTwoStringsPermutationsToEachOther;
-import Strings.areTwoStringsUnique;
-import com.Array.ArrayFormation.DeleteElement;
-import com.Array.ArrayFormation.InsertElement;
-import com.Array.ArrayFormation.Search;
-import com.Array.ArrayRotation.ArrayRotation;
-import com.Array.Sort.MergeTwoArrays;
+import com.main.Strings.ReplaceSpaces;
+import com.main.Array.ArrayFormation.InsertElement;
+import com.main.Array.ArrayFormation.Search;
+import com.main.Array.ArrayRotation.ArrayRotation;
+import com.main.Strings.palindromePermutation;
 
 public class Main {
+    public static int max = 1000;
+    public static int NO_OF_CHARACTERS = 256;
 
     public static void main(String[] args) {
         // write your code here
@@ -86,13 +86,26 @@ public class Main {
             System.out.println("Has duplicate characters");
         }*/
 
-        areTwoStringsPermutationsToEachOther permutation = new areTwoStringsPermutationsToEachOther();
+        /*areTwoStringsPermutationsToEachOther permutation = new areTwoStringsPermutationsToEachOther();
         String str1 = "dog";
         String str2 = "dog";
         if(permutation.charCount(str1, str2)){
             System.out.println("Yes");
         }
         else{
+            System.out.println("No");
+        }*/
+
+
+        ReplaceSpaces replace = new ReplaceSpaces(max);
+        /*char str[] = "Mr John Smith ".toCharArray();
+        System.out.println(replace.replaceSpaces(str,13));*/
+
+        palindromePermutation palindrome = new palindromePermutation();
+        if(palindrome.canFormPalindrome("RaRa")){
+            System.out.println("Yes");
+        }
+        else {
             System.out.println("No");
         }
     }

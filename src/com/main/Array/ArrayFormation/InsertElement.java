@@ -1,4 +1,4 @@
-package com.Array.ArrayFormation;
+package com.main.Array.ArrayFormation;
 
 public class InsertElement {
 

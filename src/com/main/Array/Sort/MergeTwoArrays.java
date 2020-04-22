@@ -1,4 +1,4 @@
-package com.Array.Sort;
+package com.main.Array.Sort;
 
 public class MergeTwoArrays {
    // First array is of size m+n and contains n elements and second array is of size m

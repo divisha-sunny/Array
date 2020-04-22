@@ -1,4 +1,4 @@
-package com.Array.ArrayFormation;
+package com.main.Array.ArrayFormation;
 
 public class DeleteElement {
     public int deleteElement(int arr[],int n,int key){

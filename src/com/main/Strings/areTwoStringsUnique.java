@@ -1,4 +1,4 @@
-package Strings;
+package com.main.Strings;
 
 public class areTwoStringsUnique {
 

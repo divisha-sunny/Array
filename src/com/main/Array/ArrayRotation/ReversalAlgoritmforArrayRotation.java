@@ -1,4 +1,4 @@
-package com.Array.ArrayRotation;
+package com.main.Array.ArrayRotation;
 
 public class ReversalAlgoritmforArrayRotation {
 

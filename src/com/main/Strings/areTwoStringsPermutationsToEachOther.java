@@ -1,4 +1,4 @@
-package Strings;
+package com.main.Strings;
 
 
 import java.util.Arrays;
@@ -10,7 +10,7 @@ public class areTwoStringsPermutationsToEachOther {
         if(s.length() != t.length()){
             return false;
         }
-        //We cannot resolve sort method for Strings.
+        //We cannot resolve sort method for com.main.Strings.
         //So we have to convert strings to character arrays
         char chs[] = s.toCharArray();
         char cht[] = t.toCharArray();

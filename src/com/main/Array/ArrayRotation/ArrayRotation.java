@@ -1,4 +1,4 @@
-package com.Array.ArrayRotation;
+package com.main.Array.ArrayRotation;
 
 public class ArrayRotation {
     /*Function to left rotate arr[] of size n by d*/
