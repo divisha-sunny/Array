@@ -4,6 +4,7 @@ import com.main.Strings.ReplaceSpaces;
 import com.main.Array.ArrayFormation.InsertElement;
 import com.main.Array.ArrayFormation.Search;
 import com.main.Array.ArrayRotation.ArrayRotation;
+import com.main.Strings.oneAway;
 import com.main.Strings.palindromePermutation;
 
 public class Main {
@@ -102,12 +103,15 @@ public class Main {
         System.out.println(replace.replaceSpaces(str,13));*/
 
         palindromePermutation palindrome = new palindromePermutation();
-        if(palindrome.palindromePermutawithList("Vasamma")){
+        /*if(palindrome.palindromePermutawithList("Vasamma")){
             System.out.println("Yes");
         }
         else {
             System.out.println("No");
-        }
+        }*/
+
+        oneAway away = new oneAway();
+        System.out.println(away.oneEditAway("divisha", "divish"));
     }
 }
 
