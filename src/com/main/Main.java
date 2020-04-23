@@ -6,6 +6,7 @@ import com.main.Array.ArrayFormation.Search;
 import com.main.Array.ArrayRotation.ArrayRotation;
 import com.main.Strings.oneAway;
 import com.main.Strings.palindromePermutation;
+import com.main.Strings.stringCompressor;
 
 public class Main {
     public static int max = 1000;
@@ -111,7 +112,10 @@ public class Main {
         }*/
 
         oneAway away = new oneAway();
-        System.out.println(away.oneEditAway("divisha", "divish"));
+       /* System.out.println(away.combinesONeMoveAway("divisha", "killu"));*/
+
+        stringCompressor compressor = new stringCompressor();
+        System.out.println(compressor.compressor(" cccccat"));
     }
 }
 
