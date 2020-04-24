@@ -1,12 +1,10 @@
 package com.main;
 
-import com.main.Strings.ReplaceSpaces;
+import com.main.Array.ReverseArray;
+import com.main.Strings.*;
 import com.main.Array.ArrayFormation.InsertElement;
 import com.main.Array.ArrayFormation.Search;
 import com.main.Array.ArrayRotation.ArrayRotation;
-import com.main.Strings.oneAway;
-import com.main.Strings.palindromePermutation;
-import com.main.Strings.stringCompressor;
 
 public class Main {
     public static int max = 1000;
@@ -115,7 +113,24 @@ public class Main {
        /* System.out.println(away.combinesONeMoveAway("divisha", "killu"));*/
 
         stringCompressor compressor = new stringCompressor();
-        System.out.println(compressor.compressor(" cccccat"));
+        /*System.out.println(compressor.compressor(" cccccat"));*/
+
+        /*ZeroMatrix zero = new ZeroMatrix();
+        int matrix[][] = {
+                {1, 2, 3, 4},
+                {5, 0, 7, 8},
+                {9, 10, 11,0},
+                {13, 14, 15, 16}
+        };
+        zero.setZero(matrix);
+        zero.printMatrix(matrix);*/
+
+        StringRotation rotation1 = new StringRotation();
+        /*System.out.println(rotation1.isRotation("waterbottle","erbottlewat"));*/
+        ReverseArray reverseArray = new ReverseArray();
+        int arr[] = {0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
+        reverseArray.reverse(arr);
+        reverseArray.printArray(arr);
     }
 }
 
